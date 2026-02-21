@@ -209,7 +209,7 @@ class FightNetAPITester:
         if not success:
             return False
             
-        post_id = response.get('id')
+        post_id = response_data.get('id')
         
         # Create comment
         success, response = self.run_test(
