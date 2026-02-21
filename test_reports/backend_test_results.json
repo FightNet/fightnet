@@ -1,72 +1,132 @@
 {
-  "summary": "8/10 tests passed",
+  "summary": "20/20 tests passed",
   "results": [
     {
       "test": "API Root",
       "status": "PASS",
       "details": "Status: 200",
-      "timestamp": "2026-02-21T02:10:51.515281"
+      "timestamp": "2026-02-21T02:11:27.724839"
     },
     {
       "test": "Health Check",
       "status": "PASS",
       "details": "Status: 200",
-      "timestamp": "2026-02-21T02:10:51.644969"
+      "timestamp": "2026-02-21T02:11:27.882356"
     },
     {
       "test": "User Registration",
       "status": "PASS",
       "details": "Status: 200",
-      "timestamp": "2026-02-21T02:10:52.007771"
+      "timestamp": "2026-02-21T02:11:28.257843"
     },
     {
       "test": "Token Generation",
       "status": "PASS",
       "details": "Token received",
-      "timestamp": "2026-02-21T02:10:52.008352"
+      "timestamp": "2026-02-21T02:11:28.258451"
     },
     {
       "test": "Get Current User",
       "status": "PASS",
       "details": "Status: 200",
-      "timestamp": "2026-02-21T02:10:52.145517"
+      "timestamp": "2026-02-21T02:11:28.402215"
     },
     {
       "test": "Create Post",
-      "status": "FAIL",
-      "details": "Expected 200, got 422",
-      "timestamp": "2026-02-21T02:10:52.334694"
+      "status": "PASS",
+      "details": "Status: 200",
+      "timestamp": "2026-02-21T02:11:28.553596"
+    },
+    {
+      "test": "Get All Posts",
+      "status": "PASS",
+      "details": "Status: 200",
+      "timestamp": "2026-02-21T02:11:28.666018"
+    },
+    {
+      "test": "Get Single Post",
+      "status": "PASS",
+      "details": "Status: 200",
+      "timestamp": "2026-02-21T02:11:28.769703"
+    },
+    {
+      "test": "Get User Posts",
+      "status": "PASS",
+      "details": "Status: 200",
+      "timestamp": "2026-02-21T02:11:28.892797"
+    },
+    {
+      "test": "Toggle Glove",
+      "status": "PASS",
+      "details": "Status: 200",
+      "timestamp": "2026-02-21T02:11:29.011864"
+    },
+    {
+      "test": "Toggle KO",
+      "status": "PASS",
+      "details": "Status: 200",
+      "timestamp": "2026-02-21T02:11:29.123967"
+    },
+    {
+      "test": "Delete Post",
+      "status": "PASS",
+      "details": "Status: 200",
+      "timestamp": "2026-02-21T02:11:29.245142"
     },
     {
       "test": "Create Post for Comments",
-      "status": "FAIL",
-      "details": "Expected 200, got 422",
-      "timestamp": "2026-02-21T02:10:52.517441"
+      "status": "PASS",
+      "details": "Status: 200",
+      "timestamp": "2026-02-21T02:11:29.360401"
+    },
+    {
+      "test": "Create Comment",
+      "status": "PASS",
+      "details": "Status: 200",
+      "timestamp": "2026-02-21T02:11:29.496860"
+    },
+    {
+      "test": "Get Comments",
+      "status": "PASS",
+      "details": "Status: 200",
+      "timestamp": "2026-02-21T02:11:29.607206"
+    },
+    {
+      "test": "Delete Comment",
+      "status": "PASS",
+      "details": "Status: 200",
+      "timestamp": "2026-02-21T02:11:29.731637"
+    },
+    {
+      "test": "Delete Test Post",
+      "status": "PASS",
+      "details": "Status: 200",
+      "timestamp": "2026-02-21T02:11:29.831361"
     },
     {
       "test": "Get User Profile",
       "status": "PASS",
       "details": "Status: 200",
-      "timestamp": "2026-02-21T02:10:52.654658"
+      "timestamp": "2026-02-21T02:11:29.938838"
     },
     {
       "test": "Update Profile",
       "status": "PASS",
       "details": "Status: 200",
-      "timestamp": "2026-02-21T02:10:52.762202"
+      "timestamp": "2026-02-21T02:11:30.055473"
     },
     {
       "test": "Search Users",
       "status": "PASS",
       "details": "Status: 200",
-      "timestamp": "2026-02-21T02:10:52.867332"
+      "timestamp": "2026-02-21T02:11:30.166032"
     },
     {
       "test": "Get Conversations",
       "status": "PASS",
       "details": "Status: 200",
-      "timestamp": "2026-02-21T02:10:53.025285"
+      "timestamp": "2026-02-21T02:11:30.298738"
     }
   ],
-  "success_rate": "80.0%"
+  "success_rate": "100.0%"
 }
