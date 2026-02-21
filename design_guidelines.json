@@ -1,0 +1,160 @@
+{
+  "identity": {
+    "name": "FightNet",
+    "tone": "Aggressive, Raw, Underground, High-Performance",
+    "aesthetic": "Dark Brutalist, Concrete, Neon Red Accents",
+    "description": "A social platform for the combat sports community. Dark, gritty, and punchy."
+  },
+  "typography": {
+    "fonts": [
+      {
+        "family": "Anton",
+        "category": "sans-serif",
+        "url": "https://fonts.googleapis.com/css2?family=Anton&display=swap",
+        "usage": "Headings, Hero Text, KPI Numbers",
+        "fallback": "Impact, sans-serif"
+      },
+      {
+        "family": "Barlow",
+        "category": "sans-serif",
+        "url": "https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap",
+        "usage": "Body text, UI elements, Buttons",
+        "fallback": "system-ui, sans-serif"
+      }
+    ],
+    "rules": {
+      "headings": "font-anton uppercase tracking-wide leading-none",
+      "body": "font-barlow tracking-normal",
+      "overline": "font-barlow uppercase tracking-[0.2em] text-xs font-bold text-red-600"
+    }
+  },
+  "colors": {
+    "palette": {
+      "background": "#0a0a0a",
+      "foreground": "#ededed",
+      "card": "#171717",
+      "card_foreground": "#ededed",
+      "popover": "#0a0a0a",
+      "popover_foreground": "#ededed",
+      "primary": "#dc2626",
+      "primary_foreground": "#ffffff",
+      "secondary": "#262626",
+      "secondary_foreground": "#ffffff",
+      "muted": "#262626",
+      "muted_foreground": "#a3a3a3",
+      "accent": "#dc2626",
+      "accent_foreground": "#ffffff",
+      "destructive": "#7f1d1d",
+      "destructive_foreground": "#ffffff",
+      "border": "#262626",
+      "input": "#171717",
+      "ring": "#dc2626"
+    },
+    "tailwind_config": {
+      "extend": {
+        "colors": {
+          "fight-red": "#dc2626",
+          "fight-black": "#0a0a0a",
+          "fight-charcoal": "#171717",
+          "fight-concrete": "#262626"
+        },
+        "fontFamily": {
+          "anton": ["Anton", "sans-serif"],
+          "barlow": ["Barlow", "sans-serif"]
+        },
+        "backgroundImage": {
+          "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+          "noise": "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E\")"
+        }
+      }
+    }
+  },
+  "visual_enhancers": {
+    "borders": "1px solid #262626",
+    "radius": "rounded-sm",
+    "shadows": {
+      "card": "0 1px 2px 0 rgba(0, 0, 0, 0.5)",
+      "glow": "0 0 15px rgba(220, 38, 38, 0.3)"
+    },
+    "textures": "Use noise background on the main body to give a gritty feel."
+  },
+  "layout_strategy": {
+    "spacing": "Generous. Use p-6 or p-8 for cards. Gap-6 for grids.",
+    "grid": "Mobile: 1 col. Desktop: 12 col grid. Feed: Centered 600px max-width.",
+    "alignment": "Left align text generally. Center align Hero text."
+  },
+  "components": {
+    "button": {
+      "base": "font-barlow font-bold uppercase tracking-wider rounded-sm transition-all duration-200",
+      "primary": "bg-red-600 hover:bg-red-700 text-white shadow-[0_0_10px_rgba(220,38,38,0.4)] hover:shadow-[0_0_20px_rgba(220,38,38,0.6)]",
+      "secondary": "bg-neutral-800 hover:bg-neutral-700 text-white border border-neutral-700",
+      "outline": "bg-transparent border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-white"
+    },
+    "card": {
+      "base": "bg-neutral-900 border border-neutral-800 rounded-sm p-6 relative overflow-hidden group"
+    },
+    "input": {
+      "base": "bg-black border border-neutral-800 focus:border-red-600 rounded-sm h-12 px-4 text-white placeholder:text-neutral-600"
+    },
+    "ko_button": {
+      "description": "Special 'Super Like' button formatted as a boxing glove or KO text.",
+      "style": "text-red-600 font-anton text-xl hover:scale-125 transition-transform cursor-pointer drop-shadow-lg"
+    }
+  },
+  "images": {
+    "hero_backgrounds": [
+      {
+        "url": "https://images.unsplash.com/photo-1564097147829-44f8c74a8549?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTZ8MHwxfHNlYXJjaHwxfHxib3hpbmclMjBtYXRjaCUyMHJpbmclMjBkYXJrJTIwYXRtb3NwaGVyZXxlbnwwfHx8fDE3NzE2MzkzNTl8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Dark boxing match crowd",
+        "usage": "Hero section background, opacity 30%"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1509563268479-0f004cf3f58b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTZ8MHwxfHNlYXJjaHw0fHxib3hpbmclMjBtYXRjaCUyMHJpbmclMjBkYXJrJTIwYXRtb3NwaGVyZXxlbnwwfHx8fDE3NzE2MzkzNTl8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Empty boxing ring spotlight",
+        "usage": "Auth page background"
+      }
+    ],
+    "placeholders": [
+      {
+        "url": "https://images.pexels.com/photos/5424528/pexels-photo-5424528.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Fighters training",
+        "usage": "Post placeholder"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1561532325-7d5231a2dede?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODF8MHwxfHNlYXJjaHwyfHxtbWElMjBmaWdodGVyJTIwdHJhaW5pbmclMjBkYXJrJTIwZ3ltfGVufDB8fHx8MTc3MTYzOTM1OHww&ixlib=rb-4.1.0&q=85",
+        "description": "Red boxing gloves",
+        "usage": "Icon or feature highlight"
+      }
+    ]
+  },
+  "icons": {
+    "library": "lucide-react",
+    "custom_mappings": {
+      "Like": "Hand (rotate 90deg) or Gavel (as fist)",
+      "KO": "Zap (Lightning) or Skull",
+      "Comment": "MessageSquare",
+      "Share": "Share2",
+      "Home": "Home",
+      "Profile": "User",
+      "Messages": "MessageCircle"
+    }
+  },
+  "universal_guidelines": [
+    "NEVER use gradients for backgrounds. Use solid blacks or dark greys.",
+    "Use red sparingly as a 'Signal Color' for actions and alerts.",
+    "Typography MUST be uppercase for all headings using 'Anton'.",
+    "Add 'data-testid' to all interactive elements.",
+    "Use the 'noise' texture in the background of the <body> or main container to reduce digital flatness.",
+    "Inputs should look 'carved out' (darker than card background).",
+    "For 'KO' reaction, use a pulsing animation effect."
+  ],
+  "instructions_to_main_agent": [
+    "1. Install 'lucide-react' if not present.",
+    "2. Add the font links to index.html or import in CSS.",
+    "3. Update tailwind.config.js with the colors and font families provided.",
+    "4. Apply the 'dark' class to the html/body tag permanently.",
+    "5. Use 'Anton' for all H1-H3 tags. Use 'Barlow' for P, Span, Div.",
+    "6. Create a 'Layout' component that includes the noise texture overlay.",
+    "7. Implement the 'KO' button logic as a special state of the Like button."
+  ]
+}
