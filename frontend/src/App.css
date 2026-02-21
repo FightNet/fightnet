@@ -1,34 +1,127 @@
-.App-logo {
-    height: 40vmin;
+/* FightNet Custom Styles */
+
+.font-anton {
+    font-family: 'Anton', sans-serif;
+}
+
+.font-barlow {
+    font-family: 'Barlow', sans-serif;
+}
+
+/* Boxing Glove Icon SVG */
+.glove-icon {
+    transition: all 0.2s ease;
+}
+
+.glove-icon:hover {
+    transform: scale(1.1);
+}
+
+.glove-icon.active {
+    filter: drop-shadow(0 0 8px rgba(220, 38, 38, 0.6));
+}
+
+/* KO Button */
+.ko-button {
+    transition: all 0.2s ease;
+}
+
+.ko-button:hover {
+    text-shadow: 0 0 10px rgba(220, 38, 38, 0.8);
+}
+
+.ko-button.active {
+    animation: ko-pulse 0.5s ease-in-out;
+}
+
+@keyframes ko-pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+    100% { transform: scale(1); }
+}
+
+/* Video container */
+.video-container {
+    position: relative;
+    width: 100%;
+    background: #0a0a0a;
+}
+
+.video-container video {
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+}
+
+/* Message bubbles */
+.message-sent {
+    background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+}
+
+.message-received {
+    background: #262626;
+}
+
+/* Scrollbar for messages */
+.messages-scroll {
+    scrollbar-width: thin;
+    scrollbar-color: #dc2626 #0a0a0a;
+}
+
+.messages-scroll::-webkit-scrollbar {
+    width: 6px;
+}
+
+.messages-scroll::-webkit-scrollbar-track {
+    background: #0a0a0a;
+}
+
+.messages-scroll::-webkit-scrollbar-thumb {
+    background: #dc2626;
+    border-radius: 3px;
+}
+
+/* Fighter stats */
+.stat-card {
+    background: #171717;
+    border: 1px solid #262626;
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    border-color: #dc2626;
+    box-shadow: 0 0 15px rgba(220, 38, 38, 0.2);
+}
+
+/* Post hover effect */
+.post-card {
+    transition: all 0.3s ease;
+}
+
+.post-card:hover {
+    border-color: #404040;
+}
+
+/* Navigation active state */
+.nav-link.active {
+    color: #dc2626;
+    border-bottom: 2px solid #dc2626;
+}
+
+/* Input focus glow */
+input:focus, textarea:focus {
+    box-shadow: 0 0 0 2px rgba(220, 38, 38, 0.3);
+}
+
+/* Noise overlay */
+.noise-overlay::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
-}
-
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-}
-
-.App-link {
-    color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+    z-index: 0;
 }
