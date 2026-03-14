@@ -1,6 +1,6 @@
 import { Outlet, Link, useLocation, useNavigate } from "react-router-dom";
 import { useAuth } from "@/App";
-import { Home, User, MessageCircle, LogOut, Plus, ShoppingBag } from "lucide-react";
+import { Home, User, MessageCircle, LogOut, Plus, ShoppingBag, Heart, MapPin, Crown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
@@ -86,6 +86,33 @@ export default function Layout() {
               data-testid="nav-store"
             >
               <ShoppingBag size={22} />
+            </Link>
+            <Link
+              to="/donate"
+              className={`p-3 rounded-sm transition-colors ${
+                isActive("/donate") ? "text-fight-red" : "text-gray-400 hover:text-white"
+              }`}
+              data-testid="nav-donate"
+            >
+              <Heart size={22} />
+            </Link>
+            <Link
+              to="/gyms"
+              className={`p-3 rounded-sm transition-colors ${
+                isActive("/gyms") ? "text-fight-red" : "text-gray-400 hover:text-white"
+              }`}
+              data-testid="nav-gyms"
+            >
+              <MapPin size={22} />
+            </Link>
+            <Link
+              to="/pro"
+              className={`p-3 rounded-sm transition-colors ${
+                isActive("/pro") ? "text-yellow-500" : "text-yellow-600 hover:text-yellow-400"
+              }`}
+              data-testid="nav-pro"
+            >
+              <Crown size={22} />
             </Link>
           </nav>
 

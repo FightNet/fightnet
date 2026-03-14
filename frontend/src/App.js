@@ -10,6 +10,9 @@ import FeedPage from "@/pages/FeedPage";
 import ProfilePage from "@/pages/ProfilePage";
 import MessagesPage from "@/pages/MessagesPage";
 import StorePage from "@/pages/StorePage";
+import DonatePage from "@/pages/DonatePage";
+import GymLocatorPage from "@/pages/GymLocatorPage";
+import ProPage from "@/pages/ProPage";
 import Layout from "@/components/Layout";
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
@@ -118,6 +121,9 @@ function App() {
               <Route path="/messages" element={<MessagesPage />} />
               <Route path="/messages/:userId" element={<MessagesPage />} />
               <Route path="/store" element={<StorePage />} />
+              <Route path="/donate" element={<DonatePage />} />
+              <Route path="/gyms" element={<GymLocatorPage />} />
+              <Route path="/pro" element={<ProPage />} />
             </Route>
           </Routes>
         </BrowserRouter>
