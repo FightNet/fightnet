@@ -1,6 +1,6 @@
 import { Outlet, Link, useLocation, useNavigate } from "react-router-dom";
 import { useAuth } from "@/App";
-import { Home, User, MessageCircle, LogOut, Plus } from "lucide-react";
+import { Home, User, MessageCircle, LogOut, Plus, ShoppingBag } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
@@ -77,6 +77,15 @@ export default function Layout() {
               data-testid="nav-profile"
             >
               <User size={22} />
+            </Link>
+            <Link
+              to="/store"
+              className={`p-3 rounded-sm transition-colors ${
+                isActive("/store") ? "text-fight-red" : "text-gray-400 hover:text-white"
+              }`}
+              data-testid="nav-store"
+            >
+              <ShoppingBag size={22} />
             </Link>
           </nav>
 

@@ -9,6 +9,7 @@ import AuthPage from "@/pages/AuthPage";
 import FeedPage from "@/pages/FeedPage";
 import ProfilePage from "@/pages/ProfilePage";
 import MessagesPage from "@/pages/MessagesPage";
+import StorePage from "@/pages/StorePage";
 import Layout from "@/components/Layout";
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
@@ -116,6 +117,7 @@ function App() {
               <Route path="/profile/:userId" element={<ProfilePage />} />
               <Route path="/messages" element={<MessagesPage />} />
               <Route path="/messages/:userId" element={<MessagesPage />} />
+              <Route path="/store" element={<StorePage />} />
             </Route>
           </Routes>
         </BrowserRouter>
